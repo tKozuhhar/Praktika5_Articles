@@ -69,7 +69,7 @@ Vastavus ülesande nõuetele:
 - Projekt GitHub'is koos README failiga
 
 ## INSTALLIMA. Kuidas käivitada
-Lae projekt alla https://github.com/tKozuhhar/Praktika3_tKozuhhar <br>
+Lae projekt alla https://github.com/tKozuhhar/Praktika5_Articles <br>
 Paigaldakse Node.js (LTS) järgmiselt lingilt: https://nodejs.org/en <br>
 LTS (Long Term Support) on stabiilne versioon pikaajalise toega. Soovitatav enamiku kasutajate jaoks.<br>
 Pärast seda paigalda Microsoft SQL Server Management, kui seda ei ole, ja paketid projektis: <br>
