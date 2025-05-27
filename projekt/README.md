@@ -91,7 +91,7 @@ Loo ".env" fail järgmine sisuga: <br>
 `PORT = 3002` <br>
 
 Pärast seda kasutatakse käsk CMD-is (serveri käivitamiseks käsurealt tuleb olla projekti kaustas): <br>
-`cd C:\Users\dungeon girl-master\sado-maso\whip\strapon\...` (käsk projekti kataloogi (kausta) sisenemiseks) <br>
+`cd C:\Users\dungeon girl-master\..\whip\..\...` (käsk projekti kataloogi (kausta) sisenemiseks) <br>
 `node server.js` (serveri käivitamise käsk) <br>
 
 Pärast seda kasutatakse käsk (näiteks) VSC-is: <br>
