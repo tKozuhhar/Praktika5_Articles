@@ -1,0 +1,145 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.carousel-item img {
+  height: 500px; /* Желаемая высота изображения */
+}
+
+/* CSS,et teha adaptiivne disain telefonide jaoks */
+@media (max-width: 800px) {
+  .carousel-item img {
+    height: 250px;
+  }
+}
+
+#imageCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Global nav-tabs */
+.navbar-nav.nav-fill {
+  width: 100% !important;
+}
+
+.navbar-nav.nav-tabs {
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+
+.navbar-nav.nav-tabs .nav-link:hover {
+  background-color:rgb(172, 161, 46);
+}
+
+.nav-item {
+  margin-top:1px;
+  margin-bottom:2px;
+}
+
+.nav.nav-tabs .nav-link.active {
+  background-color: rgb(172, 161, 46); 
+  color: #fff;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+
+.nav-item.dropdown {
+  position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  min-width: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.custom-register-btn {
+  background-color: #282c34;
+  border-color: #282c34;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-register-btn:hover {
+  background-color: rgb(172, 161, 46);
+  border-color: rgb(172, 161, 46);
+}
+
+.btn.btn-success {
+  background-color: rgb(38, 137, 74) !important;
+  color: #fff;
+  border: none;
+}
+
+.btn.btn-success:hover {
+  background-color: #4a684f !important;
+}
+
+.btn.btn-primary {
+  background-color: #282c34 !important;
+  color: #fff;
+  border: none;
+}
+
+.btn.btn-primary:hover {
+  background-color: rgb(172, 161, 46) !important;
+}
+
+.btn.btn-warning {
+  background-color: rgb(203, 198, 46)!important;
+  color: white;
+}
+
+.btn.btn-warning:hover {
+  background-color: #282c34 !important;
+}
+
+.btn.btn-danger {
+  background-color: rgb(203, 46, 46) !important;
+}
+
+.btn.btn-danger:hover {
+  background-color: #282c34 !important;
+}
