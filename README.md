@@ -69,7 +69,7 @@ Vastavus ülesande nõuetele:
 - Projekt GitHub'is koos README failiga
 
 ## INSTALLIMA. Kuidas käivitada
-Lae projekt alla https://github.com/tKozuhhar/Praktika3_tKozuhhar <br>
+Lae projekt alla https://github.com/tKozuhhar/Praktika5_Articles.git <br>
 Paigaldakse Node.js (LTS) järgmiselt lingilt: https://nodejs.org/en <br>
 LTS (Long Term Support) on stabiilne versioon pikaajalise toega. Soovitatav enamiku kasutajate jaoks.<br>
 Pärast seda paigalda Microsoft SQL Server Management, kui seda ei ole, ja paketid projektis: <br>
@@ -91,7 +91,7 @@ Loo ".env" fail järgmine sisuga: <br>
 `PORT = 3002` <br>
 
 Pärast seda kasutatakse käsk CMD-is (serveri käivitamiseks käsurealt tuleb olla projekti kaustas): <br>
-`cd C:\Users\dungeon girl-master\sado-maso\whip\strapon\...` (käsk projekti kataloogi (kausta) sisenemiseks) <br>
+`cd C:\Users\dungeon girl-master\..\whip\..\...` (käsk projekti kataloogi (kausta) sisenemiseks) <br>
 `node server.js` (serveri käivitamise käsk) <br>
 
 Pärast seda kasutatakse käsk (näiteks) VSC-is: <br>
