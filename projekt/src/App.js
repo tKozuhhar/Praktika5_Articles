@@ -42,7 +42,9 @@ function App() {
       <div className="row">
         <div className="col-md-12 col-lg-12">
           <div className="container-fluid">
+            {/* навигационное меню (navbar) с использованием Bootstrap */}
             <nav className="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center static-top">
+              {/* кнопка для мобильного меню (гамбургер) */}
               <button
                 className="navbar-toggler mx-auto"
                 type="button"
@@ -84,7 +86,7 @@ function App() {
               </div>
             </nav>
           </div>
-
+          {/* маршруты приложения */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<Signup />} />
