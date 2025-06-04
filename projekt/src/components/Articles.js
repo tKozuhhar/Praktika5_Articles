@@ -11,8 +11,8 @@ function Articles() {
   const [newTitle, setNewTitle] = useState("");
   const [newContent, setNewContent] = useState("");
 
-  const [currentPage, setCurrentPage] = useState(1);
-  const articlesPerPage = 4;
+  const [currentPage, setCurrentPage] = useState(1); // текущая страница
+  const articlesPerPage = 4; // сколько статей показывать на одной странице
 
   const fetchArticles = async () => {
     try {
@@ -56,17 +56,17 @@ function Articles() {
     }
   };
 
-  // Пагинация
+  // пагинация: вычисляем, какие статьи показывать на текущей странице
   const indexOfLastArticle = currentPage * articlesPerPage;
   const indexOfFirstArticle = indexOfLastArticle - articlesPerPage;
   const currentArticles = articles.slice(indexOfFirstArticle, indexOfLastArticle);
   const totalPages = Math.ceil(articles.length / articlesPerPage);
 
-  const goToNextPage = () => {
-    if (currentPage < totalPages) setCurrentPage((prev) => prev + 1);
+  const goToNextPage = () => { // функция для перехода на следующую страницу
+    if (currentPage < totalPages) setCurrentPage((prev) => prev + 1); // если не последняя страница, увеличиваем номер текущей страницы
   };
 
-  const goToPrevPage = () => {
+  const goToPrevPage = () => { // функция для перехода на предыдущую страницу
     if (currentPage > 1) setCurrentPage((prev) => prev - 1);
   };
 
@@ -133,6 +133,7 @@ function Articles() {
                 <p className="card-text">
                   <small className="text-muted">By: {article.User.email}</small>
                 </p>
+                {/* ссылка на страницу полной статьи */}
                 <Link
                   to={`/articles/${article.id}`}
                   className="btn btn-primary btn-sm"
@@ -152,6 +153,7 @@ function Articles() {
             >
               &larr; Previous
             </button>
+            {/* показываем текущую страницу и общее количество страниц */}
             <span className="align-self-center">Page {currentPage} of {totalPages}</span>
             <button
               className="btn btn-outline-secondary"
