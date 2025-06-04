@@ -20,7 +20,7 @@ function Signup() {
   const handleSubmit = async (e) => {
   e.preventDefault();
 
-  if (formData.password !== formData.confirmPassword) {
+  if (formData.password !== formData.confirmPassword) { // проверяем, совпадают ли пароли
     setError("Passwords do not match");
     return;
   }
@@ -91,7 +91,7 @@ function Signup() {
                         type="password"
                         className="form-control"
                         name="password"
-                        minLength={8}
+                        minLength={8} // минимальная длина пароля — 8 символов
                         value={formData.password}
                         onChange={handleChange}
                         placeholder="Password"
