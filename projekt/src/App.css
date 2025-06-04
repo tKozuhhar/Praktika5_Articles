@@ -41,7 +41,7 @@
   height: 500px; /* Желаемая высота изображения */
 }
 
-/* CSS,et teha adaptiivne disain telefonide jaoks */
+/* CSS, чтобы сделать адаптивный дизайн для телефонов */
 @media (max-width: 800px) {
   .carousel-item img {
     height: 250px;
