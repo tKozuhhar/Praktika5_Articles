@@ -7,7 +7,7 @@ User.init(
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true, // E-posti aadressid peavad olema unikaalsed
+      unique: true, // Почты или юзеры должны быть уникальными 
     },
     password: {
       type: DataTypes.STRING,
@@ -15,7 +15,7 @@ User.init(
     },
     role: {
       type: DataTypes.ENUM("Admin", "User"), 
-      defaultValue: "User", // Kui rolli ei ole määratud, saab kasutajast automaatselt "User"
+      defaultValue: "User", // Если роль не назначена, то автоматически назначается роль "User" 
     },
   },
   {
