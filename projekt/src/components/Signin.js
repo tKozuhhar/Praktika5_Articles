@@ -39,7 +39,7 @@ function Signin() {
     if (!response.ok) {
       setError(data.message || "Login failed");
       setSuccess(false);
-    } else {
+    } else { // если вход успешен, сохраняем токен и email в localStorage
       localStorage.setItem("token", data.token);
       localStorage.setItem("email", formData.email); 
 
@@ -69,6 +69,7 @@ function Signin() {
         <h2 className="text-center mb-4">Sign In</h2>
 
         <form onSubmit={handleSubmit}>
+          {/* поле для ввода email */}
           <div className="form-group mb-3">
             <div className="input-group">
               <span className="input-group-text">
@@ -80,7 +81,7 @@ function Signin() {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                onKeyPress={(e) => e.which === 32 && e.preventDefault()}
+                onKeyPress={(e) => e.which === 32 && e.preventDefault()} // запрещаем ввод пробела
                 placeholder="Email"
                 required
               />
@@ -93,7 +94,7 @@ function Signin() {
                 <i className="fa fa-lock"></i>
               </span>
               <input
-                type="password"
+                type="password" // тип поля — пароль (скрывает символы)
                 className="form-control"
                 name="password"
                 value={formData.password}
