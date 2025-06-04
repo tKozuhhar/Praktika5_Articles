@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
     const token = localStorage.getItem("token");
     if (token) {
       try {
-        const decoded = jwtDecode(token);
+        const decoded = jwtDecode(token); // расшифровываем токен, чтобы достать данные (email, ID, роль)
         setIsLoggedIn(true);
         setUserEmail(decoded.email);
         setUserId(decoded.id);
